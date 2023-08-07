@@ -1,0 +1,277 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h1, h2, h3, p, li {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #454545;
+}
+
+a {
+	color: #336;
+	text-decoration: none;
+}
+
+#primeiro-link > a {
+	color: #933;
+}
+
+ul {
+	font-size: 20px;
+}
+
+ul li {
+	font-size: 0.8em; /* equivalente a 16px */
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 80%;
+	height: 3rem; /* equivalente a 30px */
+}
+
+p {
+	font-size: 1.6rem; /* equivalente a 16px */
+}
+
+
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+}
+
+.navegacao {
+	
+}
+
+.navegacao li {
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 1rem 1rem 2rem 1rem;
+	line-height: 1.2rem;
+}
+
+.navegacao a {
+	color: #5E205C;
+	display: block;
+	margin-bottom: .5rem;
+	width: 100%;
+}
+
+
+form {
+	background: #eee;
+	padding: 0px;
+}
+
+form div {
+	/*background: #fff;*/
+	/*border-bottom: 1px solid #33f;*/
+	margin-bottom: 1rem;
+	padding-bottom: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.6rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #5E205C;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+	background-color: #5E205C;
+	height: 250px;
+	padding: 20px;
+	text-align: center;
+	font-size: 25px;
+	vertical-align: middle;
+}
+header h2{
+	color: #FFFFFF;
+	font-size: 4rem;
+	vertical-align: middle;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav h3{
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.botao{
+	background: #5E205C;
+	color: #ffffff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 10px 20px 10px 20px;
+	border: 0px;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.esquerda{
+	float: left;
+	padding: 20px;
+	width: 30%;
+}
+
+.direita{
+	float: right;
+	padding: 20px;
+	width: 70%;
+	vertical-align:middle;
+}
+
+.foto{
+	/*background-color: red;*/
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	filter: drop-shadow(3px 5px 10px #666666);
+}
+.foto img{
+	width: 100%;
+	
+}
+.filtro{
+	filter: brightness(80%) grayscale(100%);
+}
+.filtro:hover{
+	filter: grayscale(0%) saturate(150%) brightness(120%);
+}
+.tabela-home-left{
+	width: 50%;
+	display: block;
+	float: left;
+}
+.tabela-home-right{
+	width: 50%;
+	display: block;
+	float: right;
+}
+.redes-sociais{
+	width: 40%;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 425px) {
+  nav, article, coluna {
+    width: 100%;
+    height: auto;
+	min-width: 320px;
+  }
+  
+.tabela-home-left{
+	width: 100%;
+}
+.tabela-home-right{
+	width: 100%;
+}
+header {
+	height: 380px;
+	padding: 20px;
+}
+header h2{
+	font-size: 3rem;
+	text-align: center;
+}
+.navegacao li {
+	text-align: center;
+}
+nav {
+	width: 100%;
+}
+nav h3{
+	text-align: center;
+}
+.redes-sociais{
+	width: 100%;
+	text-align: center;
+}
+.esquerda{
+	float: left;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.direita{
+	float: right;
+	padding: 20px;
+	width: 100%;
+	vertical-align:middle;
+	text-align: center;
+}
+article li{
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-bottom: 50px;
+	/*height: 50px;*/
+}
+article table{
+	width: 100%
+}
+}
+
